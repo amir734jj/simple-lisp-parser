@@ -69,7 +69,7 @@ sealed abstract class Expression {
 case class FunctionDef(name: String, paramNames: List[String], desc: Option[String], body: List[Expression]) extends Expression {
   def eval(context: Context): Any = {
     context +(name, Binding(paramNames, body))
-    "Defined function '%s'".format(desc)
+    ()
   }
 }
 

@@ -24,4 +24,10 @@ class TestParser extends AnyFlatSpec with should.Matchers {
   it should "if correctly" in {
     parse("(if (< %s %s) %s %s)".format(2, 1, 2, 1)).toLong should be (1)
   }
+
+  it should "parse function and call it correctly" in {
+    parse("""(defun add(a, b) (+ a b)) """)
+
+    parse("""(add 2 1)""").toLong should be (3)
+  }
 }
