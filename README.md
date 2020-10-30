@@ -9,3 +9,10 @@ It can currently handle:
 - conditional
 - function definition
 - function invocation
+
+Example:
+
+```
+(defun add(a, b) (+ a b))
+(add 2 1)
+```
