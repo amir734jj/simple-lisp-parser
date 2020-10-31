@@ -1,6 +1,6 @@
 # simple-lisp-parser
 
-Very basic Lisp parser using Scala parser combinators
+Very basic Lisp (S-expression) parser using Scala parser combinators
 
 It can currently handle:
 
